@@ -5,18 +5,18 @@ Incluye gestión de usuarios con eliminación lógica y control de acceso basado
 
 ---
 
-## 🧩 Servicios Incluidos
+## 🧩 Servicios Incluidos y orden de arranque
 
-- **Eureka Server**  
+- **Eureka Server**  port 8761
   Registro y descubrimiento de servicios.
 
-- **API Gateway**  
+- **API Gateway**  port 8080
   Punto de entrada único, responsable del enrutamiento hacia los microservicios.
 
-- **User Service**  
+- **User Service**  port 8081
   Gestión de usuarios, login, roles y autorización vía JWT.
 
-- **Reservation Service** *(en desarrollo)*  
+- **Reservation Service** *(en desarrollo)* port 8082
   Módulo para gestionar reservas.
 
 ---
@@ -61,7 +61,7 @@ INSERT INTO user (
 
 ---
 
-### ⚙️ Variables de Entorno
+## ⚙️ Variables de Entorno
 
 Configura estas variables en tu entorno o archivo `application.properties`:
 
@@ -78,3 +78,4 @@ spring.mail.password=${CORREO_PASS}
 
 jwt.secret-key=${SECRET_KEY}
 jwt.expiration-time=${EXPIRATION_TIME}
+---
