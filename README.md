@@ -32,6 +32,37 @@ Incluye gestión de usuarios con eliminación lógica y control de acceso basado
 - Maven  
 
 ---
+## 🛠️ Registro Manual de Usuario ADMIN
+
+Podremos registrar por ahora un usuario de tipo **ADMIN** directamente en la base de datos.  
+La **contraseña se encriptará automáticamente** después de 1 hora gracias a un servicio `@Scheduled (Cron)` del `user-service`,  
+o también puedes forzar la encriptación **reiniciando** el microservicio.
+
+Puedes ejecutar esta consulta SQL desde tu gestor de base de datos favorito como **DBeaver**, **MySQL Workbench**, o desde consola.
+
+> ⚠️ **Importante:** Asegúrate de que el `role_id` corresponda al rol de tipo `ADMIN` en tu tabla `role`.  
+> El campo `enabled` puede ser `true` o `1`, dependiendo del tipo de columna (`BOOLEAN` o `TINYINT`).
+
+### 📄 Consulta SQL para crear un usuario ADMIN:
+
+```sql
+INSERT INTO user (
+  name,
+  last_name,
+  email,
+  password,
+  rol,
+  enabled
+) VALUES (
+  'AdminNombre',
+  'AdminApellido',
+  'admin@correo.com',
+  'admin123', -- esta contraseña se encriptará automáticamente después
+  'ADMIN',
+  true
+);
+
+
 
 ## ⚙️ Variables de Entorno
 
