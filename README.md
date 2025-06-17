@@ -37,6 +37,6 @@ spring.mail.password=${CORREO_PASS}
 jwt.secret-key=${SECRET_KEY}
 jwt.expiration-time=${EXPIRATION_TIME}
 
-![Screenshot from 2025-06-16 22-22-53](https://github.com/user-attachments/assets/473095f0-c8e2-4c9e-845d-4c886ef3b343)
+![Screenshot from 2025-06-16 22-22-53](https://github.com/user-attachments/assets/dbfc2967-6e1d-48d9-babd-e8e74b544e08)
 
 Al registrarte, recibirás una contraseña en tu correo que luego podrá cambiar
