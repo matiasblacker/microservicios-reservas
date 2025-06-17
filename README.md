@@ -59,9 +59,9 @@ INSERT INTO user (
   true
 );
 
+---
 
-
-## ⚙️ Variables de Entorno
+### ⚙️ Variables de Entorno
 
 Configura estas variables en tu entorno o archivo `application.properties`:
 
