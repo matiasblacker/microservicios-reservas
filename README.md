@@ -38,10 +38,7 @@ Podremos registrar por ahora un usuario de tipo **ADMIN** directamente en la bas
 La **contraseña se encriptará automáticamente** después de 1 hora gracias a un servicio `@Scheduled (Cron)` del `user-service`,  
 o también puedes forzar la encriptación **reiniciando** el microservicio.
 
-Puedes ejecutar esta consulta SQL desde tu gestor de base de datos favorito como **DBeaver**, **MySQL Workbench**, o desde consola.
-
-> ⚠️ **Importante:** Asegúrate de que el `role_id` corresponda al rol de tipo `ADMIN` en tu tabla `role`.  
-> El campo `enabled` puede ser `true` o `1`, dependiendo del tipo de columna (`BOOLEAN` o `TINYINT`).
+Puedes ejecutar esta consulta SQL desde un gestor de base de datos como **DBeaver**, **MySQL Workbench**, o desde consola.
 
 ### 📄 Consulta SQL para crear un usuario ADMIN:
 
