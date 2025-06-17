@@ -7,16 +7,16 @@ Incluye gestión de usuarios con eliminación lógica y control de acceso basado
 
 ## 🧩 Servicios Incluidos y orden de arranque
 
-- **Eureka Server**  port 8761
+- **Eureka Server**  | port 8761 |
   Registro y descubrimiento de servicios.
 
-- **API Gateway**  port 8080
+- **API Gateway** | port 8080 |
   Punto de entrada único, responsable del enrutamiento hacia los microservicios.
 
-- **User Service**  port 8081
+- **User Service** | port 8081 |
   Gestión de usuarios, login, roles y autorización vía JWT.
 
-- **Reservation Service** *(en desarrollo)* port 8082
+- **Reservation Service** *(en desarrollo)* | port 8082 |
   Módulo para gestionar reservas.
 
 ---
